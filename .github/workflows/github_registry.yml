@@ -2,8 +2,9 @@ name: CI to GHCR
 
 on:
   push:
-    branches: [ master ]
-
+   # branches: [ master ]
+   tags:
+    - "v*.*.*"
 jobs:
 
   build:
