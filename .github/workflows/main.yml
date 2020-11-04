@@ -26,10 +26,10 @@ jobs:
       -
         name: Build and push
         id: docker_build
-        uses: finleyma/build-push-action@v2
+        uses: docker/build-push-action@v2
         with:
           push: true
-          tags: user/app:latest
+          tags: finleyma/simplewhale:latest
           build-args: |
             arg1=value1
             arg2=value2
